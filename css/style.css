@@ -18,22 +18,34 @@
 
   .baku {
     background-image: url("../images/baku.jpg");
+    background-size: cover;
+    background-position: left;
+    margin: 2em 0;
 
   }
 
   .london {
     background-image: url("../images/london.png");
+    background-size: cover;
+    background-position: left;
+    margin: 2em 0;
   }
 
   .madrid {
     background-image: url("../images/madrid.jpg");
+    background-size: cover;
+    background-position: left;
+    margin: 2em 0;
   }
 
   .rome {
     background-image: url("../images/rome.jpg");
+    background-size: cover;
+    background-position: left;
+    margin: 2em 0;
 }
 
-h1 {
+.container > h1 {
  font-family: sans-serif;
  text-transform: uppercase;
  font-size: 150%;
@@ -42,17 +54,13 @@ h1 {
 
 }
 
-h2 {
+.preview > h1 {
  font-family: serif;
  font-size: 2em;
+ padding-left: 40px;
+ padding-top: 50px;
 }
 
-
-/* .top-left {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-} */
 
 /*media q */
 /* for mobile */
@@ -67,6 +75,15 @@ h2 {
     body {
         background-color: pink;
     }
+
+    .preview {
+      width: 40%;
+      height: 200px;
+      display: inline-block;
+      margin: 10px 10px;
+    }
+
+
   }
 
   /* for desktop */
