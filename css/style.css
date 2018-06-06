@@ -1,77 +1,110 @@
-
-/* * {
-    box-sizing: border-box;
-} */
-
+/* { box-sizing: border-box; } */
 
 /* general CSS */
 
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .preview {
-    width: 100%;
-    height: 400px;
-    }
-
-  .baku {
-    background-image: url("../images/baku.jpg");
-
-  }
-
-  .london {
-    background-image: url("../images/london.png");
-  }
-
-  .madrid {
-    background-image: url("../images/madrid.jpg");
-  }
-
-  .rome {
-    background-image: url("../images/rome.jpg");
+body {
+  background-color : lightgrey;
 }
 
-h1 {
- font-family: sans-serif;
- text-transform: uppercase;
- font-size: 150%;
- text-align: center;
- margin: 10%;
-
+.container {
+  width  : 100%;
+  margin : 0 auto;
 }
 
-h2 {
- font-family: serif;
- font-size: 2em;
+.preview {
+  width  : 100%;
+  height : 400px;
 }
 
+.baku {
+  margin              : 2em 0;
+  background-image    : url("../images/baku.jpg");
+  background-position : left;
+  background-size     : cover;
+}
 
-/* .top-left {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-} */
+.london {
+  margin              : 2em 0;
+  background-image    : url("../images/london.png");
+  background-position : left;
+  background-size     : cover;
+}
 
-/*media q */
-/* for mobile */
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+.madrid {
+  margin              : 2em 0;
+  background-image    : url("../images/madrid.jpg");
+  background-position : left;
+  background-size     : cover;
+}
+
+.rome {
+  margin              : 2em 0;
+  background-image    : url("../images/rome.jpg");
+  background-position : left;
+  background-size     : cover;
+}
+
+.container > h1 {
+  margin         : 25px 25px 50px 25px;
+  text-align     : center;
+  text-transform : uppercase;
+  font-family    : sans-serif;
+  font-size      : 100%;
+}
+
+.preview > h1 {
+  padding-top  : 50px;
+  padding-left : 40px;
+  font-family  : serif;
+  font-size    : 2em;
 }
 
 /* for tablet */
-@media only screen and (min-width: 601px) {
-    body {
-        background-color: pink;
-    }
+
+@media
+  only screen
+  and (min-width : 600px) {
+  .container {
+    width  : 80%;
+    margin : 0 auto;
   }
 
-  /* for desktop */
-  @media only screen and (max-width: 800px) {
-      /* body {
-          background-color: black;
-      } */
-    }
+  .preview {
+    width  : 48%;
+    height : 200px;
+    float  : left;
+    margin : 1%;
+  }
+
+  .preview > h1 {
+    padding-top  : 20px;
+    padding-left : 20px;
+    font-family  : serif;
+    font-size    : 1em;
+  }
+}
+
+/* for desktop */
+
+@media
+  only screen
+  and (min-width : 800px) {
+  .container {
+    width  : 80%;
+    margin : 0 auto;
+  }
+
+  .preview {
+    width  : 23%;
+    height : 200px;
+    float  : left;
+    margin : 1%;
+  }
+
+  .preview > h1 {
+    padding-top  : 20px;
+    padding-left : 20px;
+    font-family  : serif;
+    font-size    : 1em;
+  }
+}
